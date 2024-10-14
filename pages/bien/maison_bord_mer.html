@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/css/bien.css">
+</head>
+<body>
+<!---------------------------------------------HEADER------------------------------------------------------------------------->
+
+    <header id="accueil">
+        <div>
+            <nav class="navigation">
+                <a href="../../index.html">Accueil</a>
+                <a href="../../index.html#navcat">Catégories</a>
+                <a href="../../index.html#pref">Nos préférés</a>
+                <a href="../../pages/form.html">Formulaire de contact</a>
+            </nav>
+        </div>
+    </header>
+    
+<!---------------------------------------------IMAGES---------------------------------------------------------------------->
+
+    <main>
+        <div class="photo">
+            <img class="box one" src="../../asset/img/bord_de_mer_1/photo_1.jpg" alt="">
+            <div class="colonne2">
+                <img class="box two" src="../../asset/img/bord_de_mer_1/photo_2.jpg" alt="">
+                <img class="box three" src="../../asset/img/bord_de_mer_1/photo_3.jpg" alt="">
+            </div>
+            <div class="colonne3">
+                <img class="box four" src="../../asset/img/bord_de_mer_1/photo_4.jpg" alt="">
+                <img class="box five" src="../../asset/img/bord_de_mer_1/photo_5.jpg" alt="">
+            </div>
+        </div>
+
+<!---------------------------------------------FORMUALAIRE DE RESERVATION----------------------------------------------------->
+<div class="ensemble">
+    <div class="texte-gauche">
+        <h2>maison en bord de mer</h2>
+        <p class="description">
+            Découvrez notre charmante maison en bord de mer, un véritable havre de paix pour vos vacances. <br>Nichée sur une plage de sable fin, cette maison spacieuse et lumineuse offre des vues imprenables sur l'océan. <br> À l'intérieur, un décor contemporain et chaleureux vous accueille, avec une cuisine entièrement équipée et des espaces de vie confortables. <br> À proximité, vous trouverez des activités nautiques, des restaurants locaux et des sentiers de randonnée. <br>Parfait pour des vacances en famille ou entre amis !
+        </p>
+        <ul class="liste">
+            <li>Norme PMR</li>
+            <li>Cuisine équipé</li>
+            <li>Wifi</li>
+            <li>Parking</li>
+        </ul>
+    </div>
+
+    <div class="reservation-form">
+        <form id="form_reserv" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="150b9f16-c8e3-435a-ac92-083c86ccc70f">
+            <h2>Réservez votre séjour</h2> 
+            <label for="date_arrive">Date d'arrivée :</label>
+            <input type="date" id="date_arrive" name="date_arrive" required> <br>
+    
+            <label for="date_depart">Date de départ :</label>
+            <input type="date" id="date_depart" name="date_depart" required> <br>
+    
+            <label for="nb_voyageur">Nombre de voyageurs :</label>
+            <input type="number" id="nb_voyageur" name="nb_voyageur" min="1" required> <br>
+    
+            <h2>150€</h2>
+    
+            <button type="submit">Réserver</button>
+        </form>
+    </div>
+</div>
+
+<section>
+    <h2>Biens recommandés</h2>
+    <section class="preview">
+        <a href="../../pages/bien/villa_bord_mer.html">
+        <article class="fiche-preview">
+            <img src="../../asset/img/bord_de_mer_2/photo_1.jpg" alt="Photo prise d'un balcon avec vu sur la mer" class="preview-image">
+            <div class="preview-info">
+                <h2>Villa en bord de mer</h2>
+                <h4>Hôte : Christelle</h4>
+                <h3>220€ / nuit</h3>
+            </div>
+        </article>
+    </a>
+        <a href="../../pages/bien/appartement_dubai.html">
+        <article class="fiche-preview">
+            <img src="../../asset/img/ville_2/salon.jpg" alt="Photo d'un salon avec vu sur Dubai" class="preview-image">
+            <div class="preview-info">
+                <h2>Appartement à Dubai</h2>
+                <h4>Hôte : Billy</h4>
+                <h3>834€ / nuit</h3>
+            </div>
+        </article>
+    </a>
+        <a href="../../pages/bien/maison_en_foret.html">
+        <article class="fiche-preview">
+            <img src="../../asset/img/maison_nature_1/photo_1.jpg" alt="Photo d'une maison en foret" class="preview-image">
+            <div class="preview-info">
+                <h2>Maison en foret</h2>
+                <h4>Hôte : Léo</h4>
+                <h3>120€ / nuit</h3>
+            </div>
+        </article>
+    </a>
+    </section>
+</section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="copyright">&#169; Renouf Léo -2024</p>
+        </section>
+    </footer>
+</body>
+</html>

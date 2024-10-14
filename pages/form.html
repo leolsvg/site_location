@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/form.css" />
+  </head>
+  <body>
+    <main>
+      <header id="accueil">
+        <div>
+          <nav class="navigation">
+            <a href="../index.html#accueil">Accueil</a>
+            <a href="../index.html#accueil#navcat">Catégories</a>
+            <a href="../index.html#accueil#pref">Nos préférés</a>
+            <a href="form.html">Formulaire de contact</a>
+          </nav>
+        </div>
+      </header>
+      <div class="hgrid">
+        <div class="contact">
+          <h1>Contact</h1>
+          <div class="xgrid">
+            <div class="contact-info">
+              <img
+                src="../asset/img/formulaire/mail.png"
+                alt="dessin de logo mail"
+              />
+              <h2>Adresse email</h2>
+              <span>leorenoufc@gmail.com</span>
+              
+            </div>
+            <div class="contact-info">
+              <img
+                src="../asset/img/formulaire/tel.png"
+                alt="dessin de téléphone"
+              />
+              <h2>Numéro téléphone</h2>
+              <span>06.18.41.42.68</span>
+              
+            </div>
+          </div>
+
+          <div class="carte">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=rue%20alfred%20kastler,%20caen+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a href="https://www.gps.ie/">gps vehicle tracker</a>
+            </iframe>
+          </div>
+        </div>
+        <div class="formulaire">
+          
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <h1>Formulaire de contact</h1>
+            <div class="grid">
+                <input type="hidden" name="access_key" value="150b9f16-c8e3-435a-ac92-083c86ccc70f">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Écrivez-nous</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+                <div class="boutton">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <section class="footer">
+        <p class="copyright">&#169; Renouf Léo -2024</p>
+      </section>
+    </footer>
+  </body>
+</html>
